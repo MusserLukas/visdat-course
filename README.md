@@ -17,3 +17,11 @@ npm run build
 ## Struktur
 - `docs/` — Skript/Handout in Markdown
 - `slides/` — Marp-Markdown-Folien
+
+## Students
+
+### Lukas Musser
+- **GitHub:** @MusserLukas (https://github.com/MusserLukas)
+- **Program:** Master Mechanical Engineering
+- **Interests:** Automation of simple everyday tasks, Display data automatically in a clear format
+- **Background:** Agricultural Engineering Bachelor, C# basics 3 years ago
