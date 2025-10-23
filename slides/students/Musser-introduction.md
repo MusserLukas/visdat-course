@@ -1,11 +1,11 @@
 ---
 marp: true
 paginate: true
-footer: "VIS3VO · Student Introduction · [Your Name]"
+footer: "VIS3VO · Student Introduction · Lukas Musser"
 ---
 
 # Student Introduction
-## [Your Full Name]
+## Lukas Musser
 
 Master Mechanical Engineering · 3rd Semester  
 FH OÖ Wels
@@ -14,43 +14,43 @@ FH OÖ Wels
 
 ## About Me
 
-- **Background:** [Your educational/professional background]
-- **Experience:** [Relevant experience]
-- **Interests:** [Your interests related to the course]
+- **Background:** Bachelor's degree in Agricultural Engineering
+- **Experience:**
+- **Interests:** practical applications 
 
 ---
 
 ## Technical Skills
 
+agricultural engineering
+
 ### Programming
-- **Comfortable with:** [Languages/tools you know]
-- **Learning:** [What you're currently learning]
+- **Comfortable with:** c#
+- **Learning:** python
 
 ### Engineering Tools
-- [List relevant engineering software/tools]
+- SolidWorks
+- SketchUp
+- Excel
 
 ---
 
 ## Course Expectations
 
 ### What I want to learn:
-- [Expectation 1]
-- [Expectation 2]
-- [Expectation 3]
+- expanding experience with programming languages
+
 
 ### Data I work with:
-- [Describe your data interests]
+- Kind of data: Measurements and sensor datas from field trials
+- Challenges: sometimes huge amounts of data
+- insights I would like to extract from it: Influencing factors, correlations between data
 
 ---
 
-## Questions & Goals
-
 ### Questions:
-- [Question about course content]
-- [Question about tools/methods]
 
 ### Goals:
-- [Specific learning goal]
-- [Project aspiration]
+- expanding experience with programming languages
 
 Thank you! 🚀
