@@ -2,44 +2,38 @@
 
 ## About Me
 
-about myself:
-- Your educational background
-- Previous experience with programming or data analysis
-- Why you're taking this course
-- What you hope to learn
+- Bachelor's degree in Agricultural Engineering
+- data analysis just in excel
+- my hope: expanding experience with programming languages
 
 ## Technical Experience
 
+agricultural engineering
+
 ### Programming Languages
-- **Experienced:** C#
-- **Basic Knowledge:** [Languages you've used but aren't expert in]
-- **Want to Learn:** [Languages you're interested in learning]
+- **Experienced:** 
+- **Basic Knowledge:** C#
+- **Want to Learn:** Python
 
 ### Tools and Technologies
-List tools you've used:
-- Development environments (VS Code, Visual Studio, etc.)
-- Version control (Git, SVN, etc.)
-- Data analysis tools (Excel, MATLAB, R, etc.)
-- CAD software (SolidWorks, AutoCAD, etc.)
+
+- Visual Studio
+- Version control: nop
+- Data analysis tools: Excel
+- CAD software: SolidWorks, SketchUp
 
 ## Course Goals
 
-What do you want to achieve in this course?
-1. [Specific goal 1]
-2. [Specific goal 2]
-3. [Specific goal 3]
+1. expanding experience with programming languages
+2. undefined
+3. undefined
 
 ## Sample Data Interest
 
 Describe a type of engineering data you work with or are interested in analyzing:
-- What kind of data is it? (measurements, simulations, sensor data, etc.)
-- What challenges does it present?
-- What insights would you like to extract from it?
+- Kind of data: Measurements and sensor datas from field trials
+- Challenges: sometimes huge amounts of data
+- insights I would like to extract from it: Influencing factors, correlations between data
 
 ## Questions
 
-List any questions you have about:
-- The course content
-- Programming concepts
-- Data visualization techniques
-- Tools we'll be using
