@@ -2,7 +2,7 @@
 
 ## About Me
 
-Write a brief introduction about yourself (2-3 paragraphs):
+about myself:
 - Your educational background
 - Previous experience with programming or data analysis
 - Why you're taking this course
@@ -11,7 +11,7 @@ Write a brief introduction about yourself (2-3 paragraphs):
 ## Technical Experience
 
 ### Programming Languages
-- **Experienced:** [Languages you know well]
+- **Experienced:** C#
 - **Basic Knowledge:** [Languages you've used but aren't expert in]
 - **Want to Learn:** [Languages you're interested in learning]
 
