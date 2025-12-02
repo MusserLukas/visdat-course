@@ -1,6 +1,5 @@
 
 import pandas as pd
-import h5py
 import matplotlib.pyplot as plt
 """
 plt.plot([1, 2, 3, 4], [1, 4, 9, 16],'ro', linewidth=5.0,)
@@ -166,43 +165,3 @@ plt.subplots_adjust(top=0.92, bottom=0.08, left=0.10, right=0.95, hspace=0.25,
                     wspace=0.35)
 plt.show()
 """
-
-
-# Create sample sensor data
-np.random.seed(42)
-n_samples = 10000  # 10 seconds at 1000 Hz
-timestamps = np.linspace(0, 10, n_samples)
-
-# Generate generic sensor measurements
-sensor_data = pd.DataFrame({
-    'timestamp': timestamps,
-    'sensor_1': np.random.normal(0, 1, n_samples),
-    'sensor_2': np.random.normal(10, 2, n_samples),
-    'sensor_3': np.random.normal(100, 5, n_samples),
-    'steering_angle': 50 * np.sin(0.07 * timestamps) + np.random.normal(0, 8, n_samples),
-    'throttle_position': np.clip(55 + 35 * np.sin(0.09 * timestamps) + np.random.normal(0, 12, n_samples), 0, 100),
-    'brake_pressure': np.maximum(0, 25 * np.sin(0.13 * timestamps + np.pi) + np.random.normal(0, 6, n_samples)),
-    'suspension_travel_fl': 50 + 30 * np.sin(0.12 * timestamps) + np.random.normal(0, 8, n_samples),  # Front left
-    'suspension_travel_fr': 50 + 30 * np.sin(0.12 * timestamps + 0.1) + np.random.normal(0, 8, n_samples)  # Front right
-})
-
-sensor_data['speed'] = np.clip(sensor_data['sensor_1'], 0, 75)  # Example: limit speed to realistic range
-sensor_data['suspension_travel_fl'] = np.clip(sensor_data['suspension_travel_fl'], 0, 100)  # 0-100mm travel
-sensor_data['suspension_travel_fr'] = np.clip(sensor_data['suspension_travel_fr'], 0, 100)
-
-# Save to HDF5 with compression
-# Key arguments for pandas' to_hdf:
-#   - 'path_or_buf': filename to save to
-#   - 'key': name of the dataset/group in the HDF5 file
-#   - 'mode': file mode ('w' for write, 'a' for append, etc.)
-#   - 'format': 'fixed' (default, fast, no queries) or 'table' (slower, supports queries)
-#   - 'complib': compression library (e.g., 'zlib', 'lzf')
-#   - 'complevel': compression level (0-9, higher is more compressed)
-#   - 'data_columns': columns to make queryable (only for table format)
-sensor_data.to_hdf('data/sensor_data.h5', 
-                  key='telemetry', 
-                  mode='w',
-                  complib='zlib',    # Compression algorithm
-                  complevel=9)       # Maximum compression
-
-print(f"Saved {len(sensor_data)} samples to HDF5")
