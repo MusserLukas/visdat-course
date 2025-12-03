@@ -10,8 +10,8 @@ from ahrs.filters import Madgwick
 ## Load and Normalize the Dataset (Option B: Seperate CV files)
 
 # Load seperate files
-accel_df = pd.read_csv('data/raw/musser_acceleration_forback.csv')
-gyro_df = pd.read_csv('data/raw/musser_gyroscope_forback.csv')
+accel_df = pd.read_csv('imu-workshop/data/raw/musser_acceleration_forback.csv')
+gyro_df = pd.read_csv('imu-workshop/data/raw/musser_gyroscope_forback.csv')
 
 # MATLAB Mobile typically use columns: timestamp, X, Y, Z
 # Rename for consistency
@@ -78,7 +78,7 @@ ax1.plot(df['time'], df['accel_x'], label='X', alpha=0.7)
 ax1.plot(df['time'], df['accel_y'], label='Y', alpha=0.7)
 ax1.plot(df['time'], df['accel_z'], label='Z', alpha=0.7)
 ax1.set_ylabel('Acceleration (m/s²)')
-ax1.set_title('Raw Accelerometer Data - Forward-Backward-Slide')
+ax1.set_title('Raw Accelerometer Data')
 ax1.legend()
 ax1.grid(True)
 
@@ -88,12 +88,12 @@ ax2.plot(df['time'], df['gyro_y'], label='Y', alpha=0.7)
 ax2.plot(df['time'], df['gyro_z'], label='Z', alpha=0.7)
 ax2.set_ylabel('Angular Velocity (rad/s)')
 ax2.set_xlabel('Time (s)')
-ax2.set_title('Raw Gyroscope Data - Forward-Backward-Slide')
+ax2.set_title('Raw Gyroscope Data')
 ax2.legend()
 ax2.grid(True)
 
 plt.tight_layout()
-plt.savefig('01_raw_sensor_data_forward-backward-slide.png', dpi=300)
+plt.savefig('imu-workshop/figures/01_raw_sensor_data.png', dpi=300)
 #plt.show()
 
 
@@ -140,7 +140,7 @@ for i, axis in enumerate(['x', 'y', 'z']):
 axes[2].set_xlabel('Time (s)')
 plt.suptitle('Raw vs. Filtered Acceleration')
 plt.tight_layout()
-plt.savefig('02_filtered_acceleration.png', dpi=300)
+plt.savefig('imu-workshop/figures/02_filtered_acceleration.png', dpi=300)
 #plt.show()
 
 fig, axes = plt.subplots(3, 1, figsize=(12, 10))
@@ -157,7 +157,7 @@ for i, axis in enumerate(['x', 'y', 'z']):
 axes[2].set_xlabel('Time (s)')
 plt.suptitle('Raw vs. Filtered Gyroscope')
 plt.tight_layout()
-plt.savefig('02_filtered_gyroscope.png', dpi=300)
+plt.savefig('imu-workshop/figures/02_filtered_gyroscope.png', dpi=300)
 #plt.show()
 
 
@@ -226,7 +226,7 @@ axes[2].grid(True)
 
 plt.suptitle('Device Orientation Over Time')
 plt.tight_layout()
-plt.savefig('03_orientation_euler.png', dpi=300)
+plt.savefig('imu-workshop/figures/03_orientation_euler.png', dpi=300)
 #plt.show()
 
 
@@ -288,7 +288,7 @@ axes[2].grid(True)
 
 plt.suptitle('Motion Acceleration in Global Coordinates')
 plt.tight_layout()
-plt.savefig('04_global_acceleration.png', dpi=300)
+plt.savefig('imu-workshop/figures/04_global_acceleration.png', dpi=300)
 #plt.show()
 
 
@@ -368,7 +368,7 @@ plt.axis('equal')
 plt.grid(True, alpha=0.3)
 plt.legend()
 plt.tight_layout()
-plt.savefig('06_trajectory_2d.png', dpi=300)
+plt.savefig('imu-workshop/figures/06_trajectory_2d.png', dpi=300)
 #plt.show()
 
 ## Plot 3D Trajectory
@@ -394,7 +394,7 @@ ax.set_title('Reconstructed 3D Trajectory')
 ax.legend()
 
 plt.tight_layout()
-plt.savefig('07_trajectory_3d.png', dpi=300)
+plt.savefig('imu-workshop/figures/07_trajectory_3d.png', dpi=300)
 plt.show()
 
 
