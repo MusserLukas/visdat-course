@@ -212,7 +212,8 @@ def visualize_comparison(original, modified):
                 scalars='difference', 
                 cmap='coolwarm',
                 show_scalar_bar=True, 
-                scalar_bar_args={'title': 'diffference scaled'}
+                scalar_bar_args={'title': 'diffference scaled'},
+                copy_mesh=True  # ensure independent colormap # needed for same meshs in multiple subplots
                 )
     pl.add_text('Difference', font_size=10)
     
